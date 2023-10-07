@@ -70,6 +70,16 @@ int main(){
   char name[8] = "jahnavi";
   hero1.setName(name);  
 
-  hero1.print();
-  
+  hero1.print();  //jahnavi
+
+  //use default copy const
+    //Hero hero2 = hero1; alternate notation
+  Hero hero2(hero1);
+  hero2.print();  //jahnavi
+
+
+  hero1.name[0] = 'w';
+  hero1.print();  //wahnavi
+
+  hero2.print();  //wahnavi
 }

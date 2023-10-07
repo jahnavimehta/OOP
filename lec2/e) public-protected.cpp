@@ -32,8 +32,8 @@ class Male: protected Human{
 };
 
 int main(){
-  Male object1;
-  cout << object1.age << endl;   //INACESSIBLE
+  Male m1;
+  cout << m1.age << endl;   //INACESSIBLE
 
   cout<< m1.getHeight << endl; //ACCESSIBLE, prints garbage value;
   

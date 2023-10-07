@@ -67,7 +67,7 @@ class Hero{
   static int random() {
     cout << this->health << endl; //error since no this keyword for static
     cout << health <<endl; //error since cannot access non-static member
-    cout << timeToComplete << endl; //works!
+    return timeToComplete << endl; //works!
   }  
 
   ~Hero(){

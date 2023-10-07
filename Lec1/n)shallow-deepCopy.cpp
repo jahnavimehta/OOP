@@ -37,7 +37,7 @@ class Hero{
     cout<< "[ name: " << this->name << " ,";
     cout<< "health: " << this->health << " ,";
     cout<< "level: " << this->level << "]";
-    cout<<endl;
+    cout<< endl<< endl;
   }
 
   int getHealth(){

@@ -28,6 +28,7 @@ class Hero{
   //   this->level = temp.level;
   // } //error
   Hero(Hero& temp){ //pass by reference to save from infinite loop
+    cout<< "copy constructor called" << endl;
     this->health = temp.health;
     this->level = temp.level;
   }

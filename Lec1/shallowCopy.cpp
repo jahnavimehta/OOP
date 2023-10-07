@@ -71,4 +71,5 @@ int main(){
   hero1.setName(name);  
 
   hero1.print();
+  
 }

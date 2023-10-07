@@ -27,6 +27,11 @@ class Hero{
 
   //user defined copy constructor
   Hero(Hero& temp){ 
+    //FIRST CREATE NEW CHAR ARRAY THEN COPY FROM IT
+    char *charArr = new char[strlen(temp.name) + 1];
+    strcpy(charArr, temp.name);
+    this->name = ch;
+    
     cout<< "copy constructor called" << endl;
     this->health = temp.health;
     this->level = temp.level;
@@ -81,5 +86,5 @@ int main(){
   hero1.name[0] = 'w';
   hero1.print();  //wahnavi
 
-  hero2.print();  //wahnavi
+  hero2.print();  //jahnavi  not wahnavi!!!
 }

@@ -25,12 +25,8 @@ class Hero{
    this -> health = health;
   }    
 
-  //user defined copy constructor
-  Hero(Hero& temp){ 
-    cout<< "copy constructor called" << endl;
-    this->health = temp.health;
-    this->level = temp.level;
-  }
+ // NO COPY CONSTRUCTOR
+// USE INBUILT DEFAULT COPY CONSTRUCTOR
     
   void print(){
     cout<<endl;   

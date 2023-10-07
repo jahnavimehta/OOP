@@ -44,5 +44,5 @@ int main(){
   
 
   //object created dynamically
-  Hero *h = new Hero;  // default constructor called
+  Hero *h = new Hero(12);  // default constructor called
 }
